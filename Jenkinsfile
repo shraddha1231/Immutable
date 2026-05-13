@@ -6,7 +6,7 @@ pipeline{
 	stages{
 		stage('Checkout'){
 			steps{
-			git brach : 'master' , url: "https://github.com/shraddha1231/Immutable"
+			git branch : 'master' , url: "https://github.com/shraddha1231/Immutable.git"
 			}
 			}
 		stage('Build'){
