@@ -6,7 +6,7 @@ pipeline{
 	stages{
 		stage('Checkout'){
 			steps{
-			git brach : 'master' , url: ""
+			git brach : 'master' , url: "https://github.com/shraddha1231/Immutable"
 			}
 			}
 		stage('Build'){
@@ -21,7 +21,7 @@ pipeline{
 			}
 		stage('Run Application'){
 			steps{
-			sh 'mvn exec:java -Dexec.mainClass="com.example.App"
+			sh 'mvn exec:java -Dexec.mainClass="com.example.App"'
 			}
 			}
 	}
